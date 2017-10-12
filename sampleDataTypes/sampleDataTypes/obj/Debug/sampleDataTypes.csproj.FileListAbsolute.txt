@@ -1,0 +1,6 @@
+C:\csharp\sampleDataTypes\sampleDataTypes\bin\Debug\sampleDataTypes.exe.config
+C:\csharp\sampleDataTypes\sampleDataTypes\bin\Debug\sampleDataTypes.exe
+C:\csharp\sampleDataTypes\sampleDataTypes\bin\Debug\sampleDataTypes.pdb
+C:\csharp\sampleDataTypes\sampleDataTypes\obj\Debug\sampleDataTypes.csprojResolveAssemblyReference.cache
+C:\csharp\sampleDataTypes\sampleDataTypes\obj\Debug\sampleDataTypes.exe
+C:\csharp\sampleDataTypes\sampleDataTypes\obj\Debug\sampleDataTypes.pdb

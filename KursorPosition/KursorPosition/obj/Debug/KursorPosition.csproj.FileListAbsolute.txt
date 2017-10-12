@@ -1,0 +1,5 @@
+C:\csharp\KursorPosition\KursorPosition\bin\Debug\KursorPosition.exe.config
+C:\csharp\KursorPosition\KursorPosition\bin\Debug\KursorPosition.exe
+C:\csharp\KursorPosition\KursorPosition\bin\Debug\KursorPosition.pdb
+C:\csharp\KursorPosition\KursorPosition\obj\Debug\KursorPosition.exe
+C:\csharp\KursorPosition\KursorPosition\obj\Debug\KursorPosition.pdb

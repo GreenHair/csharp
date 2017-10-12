@@ -1,0 +1,6 @@
+C:\csharp\Formatsausdruck\Formatsausdruck\bin\Debug\Formatsausdruck.exe.config
+C:\csharp\Formatsausdruck\Formatsausdruck\bin\Debug\Formatsausdruck.exe
+C:\csharp\Formatsausdruck\Formatsausdruck\bin\Debug\Formatsausdruck.pdb
+C:\csharp\Formatsausdruck\Formatsausdruck\obj\Debug\Formatsausdruck.csprojResolveAssemblyReference.cache
+C:\csharp\Formatsausdruck\Formatsausdruck\obj\Debug\Formatsausdruck.exe
+C:\csharp\Formatsausdruck\Formatsausdruck\obj\Debug\Formatsausdruck.pdb

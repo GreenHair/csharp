@@ -1,0 +1,6 @@
+C:\csharp\einkaufsArray\einkaufsArray\bin\Debug\einkaufsArray.exe.config
+C:\csharp\einkaufsArray\einkaufsArray\obj\Debug\einkaufsArray.csprojResolveAssemblyReference.cache
+C:\csharp\einkaufsArray\einkaufsArray\bin\Debug\einkaufsArray.exe
+C:\csharp\einkaufsArray\einkaufsArray\bin\Debug\einkaufsArray.pdb
+C:\csharp\einkaufsArray\einkaufsArray\obj\Debug\einkaufsArray.exe
+C:\csharp\einkaufsArray\einkaufsArray\obj\Debug\einkaufsArray.pdb

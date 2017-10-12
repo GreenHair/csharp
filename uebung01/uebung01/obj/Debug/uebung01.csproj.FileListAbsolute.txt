@@ -1,0 +1,5 @@
+C:\csharp\uebung01\uebung01\bin\Debug\uebung01.exe.config
+C:\csharp\uebung01\uebung01\bin\Debug\uebung01.exe
+C:\csharp\uebung01\uebung01\bin\Debug\uebung01.pdb
+C:\csharp\uebung01\uebung01\obj\Debug\uebung01.exe
+C:\csharp\uebung01\uebung01\obj\Debug\uebung01.pdb

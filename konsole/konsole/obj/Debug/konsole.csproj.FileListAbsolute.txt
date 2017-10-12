@@ -1,0 +1,6 @@
+C:\csharp\konsole\konsole\bin\Debug\konsole.exe.config
+C:\csharp\konsole\konsole\bin\Debug\konsole.exe
+C:\csharp\konsole\konsole\bin\Debug\konsole.pdb
+C:\csharp\konsole\konsole\obj\Debug\konsole.csprojResolveAssemblyReference.cache
+C:\csharp\konsole\konsole\obj\Debug\konsole.exe
+C:\csharp\konsole\konsole\obj\Debug\konsole.pdb

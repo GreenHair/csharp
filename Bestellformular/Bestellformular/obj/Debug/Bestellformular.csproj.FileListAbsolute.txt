@@ -1,0 +1,6 @@
+C:\csharp\Bestellformular\Bestellformular\bin\Debug\Bestellformular.exe.config
+C:\csharp\Bestellformular\Bestellformular\bin\Debug\Bestellformular.exe
+C:\csharp\Bestellformular\Bestellformular\bin\Debug\Bestellformular.pdb
+C:\csharp\Bestellformular\Bestellformular\obj\Debug\Bestellformular.csprojResolveAssemblyReference.cache
+C:\csharp\Bestellformular\Bestellformular\obj\Debug\Bestellformular.exe
+C:\csharp\Bestellformular\Bestellformular\obj\Debug\Bestellformular.pdb

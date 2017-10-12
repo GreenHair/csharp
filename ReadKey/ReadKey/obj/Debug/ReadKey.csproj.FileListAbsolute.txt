@@ -1,0 +1,6 @@
+C:\csharp\ReadKey\ReadKey\bin\Debug\ReadKey.exe.config
+C:\csharp\ReadKey\ReadKey\bin\Debug\ReadKey.exe
+C:\csharp\ReadKey\ReadKey\bin\Debug\ReadKey.pdb
+C:\csharp\ReadKey\ReadKey\obj\Debug\ReadKey.csprojResolveAssemblyReference.cache
+C:\csharp\ReadKey\ReadKey\obj\Debug\ReadKey.exe
+C:\csharp\ReadKey\ReadKey\obj\Debug\ReadKey.pdb
