@@ -21,11 +21,12 @@ namespace Bestellformular_ConsoleApplication
 
         static void Main(string[] args)
         {
+            Title = "Detlev's Computer Laden";
             Dictionary<string, double> landMwst = new Dictionary<string, double>();
-            landMwst.Add("D", 0.19);
+            landMwst.Add("DE", 0.19);
             landMwst.Add("NL", 0.21);
-            landMwst.Add("S", 0.25);
-            landMwst.Add("F", 0.16);
+            landMwst.Add("SW", 0.25);
+            landMwst.Add("FR", 0.16);
 
             Bestellzeile[] bestellung = new Bestellzeile[]
                 { new Bestellzeile {bezeichnung ="Laptop" ,einzelpreis=782.99,bestellmenge=0,zeilenpreis=0.0 },
@@ -34,20 +35,41 @@ namespace Bestellformular_ConsoleApplication
                   new Bestellzeile {bezeichnung ="Printer",einzelpreis=236.39,bestellmenge=0,zeilenpreis=0.0 },
                   new Bestellzeile {bezeichnung ="Desktop",einzelpreis=986.99,bestellmenge=0,zeilenpreis=0.0 }
                 };
+            BackgroundColor = White;
+            Clear();
+            string dateString = $"Heute: {DateTime.Now.ToLongDateString()}";
+            string timeString = $" {DateTime.Now.ToString("hh:mm:ss")}";
+
+            int lengthDateTimeNow = dateString.Length;
+            int lengthTimeNow = timeString.Length;
+            
+            int maxWidth = LargestWindowWidth;
+            int maxHeight = LargestWindowHeight;
+            int topLine = 0;
+            SetWindowSize(maxWidth / 2, maxHeight / 2);
+            SetCursorPosition(maxWidth / 2 - lengthDateTimeNow, topLine);
+            ForegroundColor = Red;
+            WriteLine(dateString);
+            ForegroundColor = DarkGreen;
+            SetCursorPosition(maxWidth / 2 - lengthDateTimeNow - 2, topLine + 1);
+            WriteLine("Uhrzeit:");
+            SetCursorPosition(maxWidth / 2 - lengthTimeNow, topLine + 1);
+            WriteLine(timeString);
+
             int oldCursorTop = 9;
             ConsoleKeyInfo cki;
             bool mwstGesetzt = false;
             //double steuerSatz = mehrwertsteuersatz(landMwst);
-            
+            double steuerSatz = 0.0;
             //WriteLine("\n{0}", landMwst["D"]);
             do
             {
                 int startLeft = 4; int startTop = 8;
                 int breiteBez = 7; int breiteEp = 7;
                 SetCursorPosition(startLeft, startTop);
-                ForegroundColor = White;
+                ForegroundColor = Black;
                 Write("Bezeichnung\tE.Preis\tBestellmenge\tPreis");
-                ForegroundColor = Green;
+                ForegroundColor = Blue;
                 double gesamtpreis = 0;
                 foreach (Bestellzeile zeile in bestellung)
                 {
@@ -55,9 +77,9 @@ namespace Bestellformular_ConsoleApplication
                     Write("{0,-7}\t{1,7:F2}\t{2,6:D}\t{3,13:F2}", zeile.bezeichnung, zeile.einzelpreis, zeile.bestellmenge, zeile.zeilenpreis);
                     gesamtpreis += zeile.zeilenpreis;
                 }
-                hinweiseAusgeben(startLeft,startTop-1,Red);
+                hinweiseAusgeben(startLeft,startTop-5,Red);
                 CursorSize = 10;
-               while (!mwstGesetzt)
+              /* while (!mwstGesetzt)
                 {
                     SetCursorPosition(startLeft, 18);
                     WriteLine("Bitte geben Sie ihr Mehrwertsteuersatz an: ");
@@ -73,16 +95,22 @@ namespace Bestellformular_ConsoleApplication
                     }
                     else
                     {
-                        Write("\nLand nicht gefunden, bitte versuchen Sie es nochmanl!");
+                        Write("\nLand nicht gefunden, bitte versuchen Sie es nochmahl!");
                     }
                     
-                }
+                }*/
                 
                 SetCursorPosition(startLeft, 20);
                 Write("Gesamtpreis: {0,8:F2}", gesamtpreis);
-             // Write("\n Mehrwertsteuer: {0,8:F2}", mwstBerechnen(0.07,gesamtpreis));
-             // Write("\n          Summe: {0,8:F2}", gesamtpreis + mwstBerechnen(0.07,gesamtpreis));
-                summeBerechnen(gesamtpreis, Yellow, landMwst[auswahl] /*steuerSatz*/);
+                // Write("\n Mehrwertsteuer: {0,8:F2}", mwstBerechnen(0.07,gesamtpreis));
+                // Write("\n          Summe: {0,8:F2}", gesamtpreis + mwstBerechnen(0.07,gesamtpreis));
+                
+                if (steuerSatz == 0.0)
+                {
+                    steuerSatz = mehrwertsteuersatz(landMwst);
+                }
+                
+                summeBerechnen(gesamtpreis, ConsoleColor.DarkGreen, /*landMwst[auswahl]*/ steuerSatz);
                 
                 SetCursorPosition(breiteBez + 8 + breiteEp + 8, oldCursorTop);
                 cki = Console.ReadKey(true);
@@ -159,7 +187,7 @@ namespace Bestellformular_ConsoleApplication
         {
             ConsoleColor hilf = ForegroundColor;
             double ust = gesamtpreis * mwst;
-            Write("\n Mehrwertsteuer: {0,8:F2}\t Mwst = {1:P}", ust, mwst);
+            Write("\n Mehrwertsteuer: {0,8:F2}\t Mwst = {1:P}      ", ust, mwst);
             ForegroundColor = farbe;            
             SetCursorPosition(10, CursorTop + 1);
             Write("Summe: {0,8:F2}", gesamtpreis + ust);
@@ -167,21 +195,29 @@ namespace Bestellformular_ConsoleApplication
         }
         private static double mehrwertsteuersatz(Dictionary<string,double> steuer)
         {
+            int x = CursorLeft, y = CursorTop;
+            ConsoleColor hilf = ForegroundColor;
             double satz = 0.0;
+            SetCursorPosition(4, 4);
+            ForegroundColor = DarkMagenta;
             foreach (KeyValuePair<string, double> kvp in steuer)
             {
                 Write("{0} : {1:P}\t", kvp.Key, kvp.Value);
             }
-            Write("\nBitte geben Sie ihr Mehrwertsteuersatz an: ");
+            Write("\n    Bitte geben Sie ihr Mehrwertsteuersatz an: ");
             string eingabe = ReadLine();
             if(steuer.TryGetValue(eingabe, out satz))
             {
+                SetCursorPosition(x, y);
+                ForegroundColor = hilf;
                 return satz;
             }
             else
             {
-                WriteLine("Land nicht gefunden. Es werden 19% berechnet.");
+                WriteLine("    Land nicht gefunden. Es werden 19% berechnet.");
                 satz = 0.19;
+                SetCursorPosition(x, y);
+                ForegroundColor = hilf;
                 return satz;
             }
             

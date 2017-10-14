@@ -1,0 +1,6 @@
+C:\csharp\klasseAbstrakt\klasseAbstrakt\bin\Debug\klasseAbstrakt.exe.config
+C:\csharp\klasseAbstrakt\klasseAbstrakt\bin\Debug\klasseAbstrakt.exe
+C:\csharp\klasseAbstrakt\klasseAbstrakt\bin\Debug\klasseAbstrakt.pdb
+C:\csharp\klasseAbstrakt\klasseAbstrakt\obj\Debug\klasseAbstrakt.csprojResolveAssemblyReference.cache
+C:\csharp\klasseAbstrakt\klasseAbstrakt\obj\Debug\klasseAbstrakt.exe
+C:\csharp\klasseAbstrakt\klasseAbstrakt\obj\Debug\klasseAbstrakt.pdb

@@ -1,0 +1,6 @@
+C:\csharp\klasseBruch\klasseBruch\bin\Debug\klasseBruch.exe.config
+C:\csharp\klasseBruch\klasseBruch\obj\Debug\klasseBruch.csprojResolveAssemblyReference.cache
+C:\csharp\klasseBruch\klasseBruch\bin\Debug\klasseBruch.exe
+C:\csharp\klasseBruch\klasseBruch\bin\Debug\klasseBruch.pdb
+C:\csharp\klasseBruch\klasseBruch\obj\Debug\klasseBruch.exe
+C:\csharp\klasseBruch\klasseBruch\obj\Debug\klasseBruch.pdb

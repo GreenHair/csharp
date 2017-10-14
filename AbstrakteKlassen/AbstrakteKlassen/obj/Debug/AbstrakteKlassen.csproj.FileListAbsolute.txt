@@ -1,0 +1,9 @@
+C:\csharp\AbstrakteKlassen\AbstrakteKlassen\bin\Debug\AbstrakteKlassen.exe.config
+C:\csharp\AbstrakteKlassen\AbstrakteKlassen\bin\Debug\AbstrakteKlassen.exe
+C:\csharp\AbstrakteKlassen\AbstrakteKlassen\bin\Debug\AbstrakteKlassen.pdb
+C:\csharp\AbstrakteKlassen\AbstrakteKlassen\obj\Debug\AbstrakteKlassen.csprojResolveAssemblyReference.cache
+C:\csharp\AbstrakteKlassen\AbstrakteKlassen\obj\Debug\AbstrakteKlassen.exe
+C:\csharp\AbstrakteKlassen\AbstrakteKlassen\obj\Debug\AbstrakteKlassen.pdb
+C:\Users\Auke Swen\Documents\US_FIAE_24\Data\C#\csharp\AbstrakteKlassen\AbstrakteKlassen\bin\Debug\AbstrakteKlassen.exe.config
+C:\Users\Auke Swen\Documents\US_FIAE_24\Data\C#\csharp\AbstrakteKlassen\AbstrakteKlassen\obj\Debug\AbstrakteKlassen.exe
+C:\Users\Auke Swen\Documents\US_FIAE_24\Data\C#\csharp\AbstrakteKlassen\AbstrakteKlassen\obj\Debug\AbstrakteKlassen.pdb
