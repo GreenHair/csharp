@@ -29,13 +29,13 @@ namespace Discounter_ConsoleApplication
             DiscounterActor_ConsoleApplication.Lagerist lagermensch = new DiscounterActor_ConsoleApplication.Lagerist();
             ReadLine();
 
-            DiscounterActor_ConsoleApplication.Kunde k = new DiscounterActor_ConsoleApplication.Kunde();
+          /*  DiscounterActor_ConsoleApplication.Kunde k = new DiscounterActor_ConsoleApplication.Kunde();
             k.einkaufswagen=k.wareEntnehmen(v);
             v.anzeigen(v.regale);
             k.bezahlen(ref kasse); // wird polymorph weitergegeben an  kasse.kunde_abrechnen();
-            /* Kunde aus dem Speicher entfernen
-            k = null;
-            GC.Collect();*/
+           // Kunde aus dem Speicher entfernen
+           // k = null;
+           // GC.Collect();
             ReadLine();
             
             v.anzeigen(v.regale);
@@ -71,15 +71,15 @@ namespace Discounter_ConsoleApplication
             // Console.WriteLine();
             DiscounterActor_ConsoleApplication.Kunde k3 = new DiscounterActor_ConsoleApplication.Kunde();
             k3.einkaufswagen = k3.wareEntnehmen(v, k3.einkaufsliste);
-            v.anzeigen(v.regale);
+            v.anzeigen(v.regale); 
             k3.bezahlen(ref kasse);
             ReadLine();
             kasse.nachfuellen_anfordern(ref v,ref l, lagermensch);
             v.anzeigen(v.regale);
             l.anzeigen(l.regale);
-            ReadLine();
-            DiscounterActor_ConsoleApplication.Kunde[] menge = new DiscounterActor_ConsoleApplication.Kunde[10];
-            for( int i = 0; i < 10; i++)
+            ReadLine();*/
+            DiscounterActor_ConsoleApplication.Kunde[] menge = new DiscounterActor_ConsoleApplication.Kunde[20];
+            for( int i = 0; i < 20; i++)
             {
                 menge[i] = new DiscounterActor_ConsoleApplication.Kunde();
                 menge[i].einkaufswagen = menge[i].wareEntnehmen(v);
@@ -88,7 +88,7 @@ namespace Discounter_ConsoleApplication
                 {
                     kasse.nachfuellen_anfordern(ref v, ref l, lagermensch);
                 }
-                System.Threading.Thread.Sleep(2000);
+                System.Threading.Thread.Sleep(3000);
             }
             v.anzeigen(v.regale);
             l.anzeigen(l.regale);

@@ -89,17 +89,17 @@ namespace DiscounterActor_ConsoleApplication
             for(int i = 0; i < alt_liste.liste.Count;i++)
             {
  
-                Console.WriteLine(" Auf dem Zettel : Artikel {0,3} soll {1,3} mal gekauft werden", alt_liste.liste[i].artikel, alt_liste.liste[i].anzahl);
+              //  Console.WriteLine(" Auf dem Zettel : Artikel {0,3} soll {1,3} mal gekauft werden", alt_liste.liste[i].artikel, alt_liste.liste[i].anzahl);
                 if (r.regale[alt_liste.liste[i].artikel].aktuellerInhalt >= alt_liste.liste[i].anzahl)
                 { // genug im Regal
-                    Console.WriteLine("genug da");
+                //    Console.WriteLine("genug da");
                     r.regale[alt_liste.liste[i].artikel].aktuellerInhalt -= alt_liste.liste[i].anzahl;                    // einkaufswagen.liste.Add = // wunsch
                     einkaufswagen.liste.Add(alt_liste.liste[i]);
                 }
                 else
                 { // zu wenig im Regal, alles was noch da ist
                     //Console.WriteLine("zu wenig da, Regal wird leer gemacht");
-                    Console.WriteLine("Es sind noch {0,3} da, Regal wird leer gemacht.", r.regale[alt_liste.liste[i].artikel].aktuellerInhalt);
+                  //  Console.WriteLine("Es sind noch {0,3} da, Regal wird leer gemacht.", r.regale[alt_liste.liste[i].artikel].aktuellerInhalt);
                     einkaufswagen.liste.Add(new Einkaufszettel.zeile(alt_liste.liste[i].artikel, r.regale[alt_liste.liste[i].artikel].aktuellerInhalt));
                     r.regale[alt_liste.liste[i].artikel].aktuellerInhalt = 0;
           //          einkaufswagen.liste.Add(new Einkaufszettel.zeile(i, r.regale[alt_liste.liste[i].artikel].aktuellerInhalt));
@@ -110,10 +110,11 @@ namespace DiscounterActor_ConsoleApplication
                 if (r.regale[alt_liste.liste[i].artikel].nachfuellen == true)
                 {
                     r.leereRegale++;
-                    Console.WriteLine("Es gibt {0} leere Regale im Raum.", r.leereRegale);
+                   // Console.WriteLine("Es gibt {0} leere Regale im Raum.", r.leereRegale);
                 }
 
             }
+            Console.WriteLine("Es gibt {0} leere Regale im Raum.", r.leereRegale);
             Console.WriteLine("Im Wagen sind {0} verschiedene Artikel ", einkaufswagen.liste.Count);
             return einkaufswagen;   // wegen Änderung der Rückgabe von void auf Einkaufszettel
         }

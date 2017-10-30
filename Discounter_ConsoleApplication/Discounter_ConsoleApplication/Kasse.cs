@@ -33,7 +33,7 @@ namespace DiscounterActor_ConsoleApplication
             kunde_umsatz = 0.0;
             for (int i = 0; i < ekw.liste.Count;i++)
             {
-                Console.WriteLine("Artikel {0,3}, {1,3} mal a {2,4:F2} Euro", ekw.liste[i].artikel, ekw.liste[i].anzahl, Warenkatalog.warenkatalog[ekw.liste[i].artikel].art_einzelpreis);
+               // Console.WriteLine("Artikel {0,3}, {1,3} mal a {2,4:F2} Euro", ekw.liste[i].artikel, ekw.liste[i].anzahl, Warenkatalog.warenkatalog[ekw.liste[i].artikel].art_einzelpreis);
                 kunde_umsatz += ekw.liste[i].anzahl * Warenkatalog.warenkatalog[ekw.liste[i].artikel].art_einzelpreis;
             }
             tages_umsatz += kunde_umsatz;            
@@ -61,16 +61,12 @@ namespace DiscounterActor_ConsoleApplication
             {
                 if (v.regale[i].nachfuellen == true)
                 {
-                    Console.WriteLine(" Regal {0} muss aufgefüllt werden ", i);
-                    Console.WriteLine(" Es fehlen zum Maximalbestand {0} Einheiten", v.regale[i].kapazität - v.regale[i].aktuellerInhalt);
+                   // Console.WriteLine(" Regal {0} muss aufgefüllt werden ", i);
+                   // Console.WriteLine(" Es fehlen zum Maximalbestand {0} Einheiten", v.regale[i].kapazität - v.regale[i].aktuellerInhalt);
                     fehlliste.liste.Add(new Einkaufszettel.zeile() { artikel = i, anzahl = v.regale[i].kapazität - v.regale[i].aktuellerInhalt });
                 }
             }
-
-
             // Fehlende Menge zum Maximalbestand
-
-
             return fehlliste;
         }
     }

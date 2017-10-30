@@ -1,0 +1,7 @@
+C:\Users\Auke Swen\Documents\US_FIAE_24\Data\C#\Detlev\CSharp-master2\CSharp-master\Wdh20173010ConsoleApplication\Wdh20173010ConsoleApplication\bin\Debug\Wdh20173010ConsoleApplication.exe.config
+C:\Users\Auke Swen\Documents\US_FIAE_24\Data\C#\csharp\Wdh20173010ConsoleApplication\Wdh20173010ConsoleApplication\bin\Debug\Wdh20173010ConsoleApplication.exe.config
+C:\Users\Auke Swen\Documents\US_FIAE_24\Data\C#\csharp\Wdh20173010ConsoleApplication\Wdh20173010ConsoleApplication\bin\Debug\Wdh20173010ConsoleApplication.exe
+C:\Users\Auke Swen\Documents\US_FIAE_24\Data\C#\csharp\Wdh20173010ConsoleApplication\Wdh20173010ConsoleApplication\bin\Debug\Wdh20173010ConsoleApplication.pdb
+C:\Users\Auke Swen\Documents\US_FIAE_24\Data\C#\csharp\Wdh20173010ConsoleApplication\Wdh20173010ConsoleApplication\obj\Debug\Wdh20173010ConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Users\Auke Swen\Documents\US_FIAE_24\Data\C#\csharp\Wdh20173010ConsoleApplication\Wdh20173010ConsoleApplication\obj\Debug\Wdh20173010ConsoleApplication.exe
+C:\Users\Auke Swen\Documents\US_FIAE_24\Data\C#\csharp\Wdh20173010ConsoleApplication\Wdh20173010ConsoleApplication\obj\Debug\Wdh20173010ConsoleApplication.pdb
