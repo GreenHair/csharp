@@ -51,8 +51,11 @@ namespace DiscounterActor_ConsoleApplication
                 volumen += alt_liste.liste[i].anzahl * Warenkatalog.warenkatalog[alt_liste.liste[i].artikel].art_volumen;
                 
             }
+            ConsoleColor temp = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Es gibt {0} leere Regale im Raum.", r.leereRegale);
             Console.WriteLine("Da muß ich {0} cbm schleppen!", volumen);
+            Console.ForegroundColor = temp;
         }
         // Auftragsliste abarbeiten
         // - Artikel aus Lager entnehmen ( dazu muß es ein Lager geben! )

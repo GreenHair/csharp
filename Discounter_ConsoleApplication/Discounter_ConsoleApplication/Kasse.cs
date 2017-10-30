@@ -45,11 +45,14 @@ namespace DiscounterActor_ConsoleApplication
             // Auftrag an Personal, die Regale auf der Fehlliste nachzufüllen
 
             // dazu braucht mann das Resultat von fehlbestand_anzeigen(), einen Lagerspezi der angsprochen wird
-            Einkaufszettel auftrag = new Einkaufszettel("Auftrag");            
+            Einkaufszettel auftrag = new Einkaufszettel("Auftrag");
+            ConsoleColor temp = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Der Lagerist geht zum Lager....");
             auftrag = heinz.wareEntnehmen(l, fehlbestand_anzeigen(v));
             Console.WriteLine("Der Lagerist füllt nach...");
-            heinz.wareAuffuellen(v, auftrag);           
+            heinz.wareAuffuellen(v, auftrag);
+            Console.ForegroundColor = temp;        
         }
 
         public Einkaufszettel  fehlbestand_anzeigen(Discounter_ConsoleApplication.Raum v)

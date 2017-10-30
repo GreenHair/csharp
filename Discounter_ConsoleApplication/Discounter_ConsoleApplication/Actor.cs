@@ -114,8 +114,11 @@ namespace DiscounterActor_ConsoleApplication
                 }
 
             }
+            ConsoleColor temp = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Es gibt {0} leere Regale im Raum.", r.leereRegale);
             Console.WriteLine("Im Wagen sind {0} verschiedene Artikel ", einkaufswagen.liste.Count);
+            Console.ForegroundColor = temp;
             return einkaufswagen;   // wegen Änderung der Rückgabe von void auf Einkaufszettel
         }
     }
